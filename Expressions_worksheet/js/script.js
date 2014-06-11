@@ -38,5 +38,6 @@ var item = prompt("What did you buy?", "");//prompt for the item you purchased
 var saleTax = prompt("What is the sales tax", "");//prompt for your sales tax
 var disPrice = oriPrice * ((100 - disPer)/100);//100 minus the percent off, divided by 100 to get the decimal point multiplied by the original price
 var taxPrice = disPrice + (disPrice * (saleTax/100));//the sales tax divided by 100 to get the decimal point, then multiplied by the discounted price, and then added to the discounted price
-var result5 = ("Your " + item + " was originally $" + oriPrice + ", but after a " + disPer + "% discount, it is now $" + disPrice + " without tax, and $" + taxPrice + " with tax.");//the result in a concatenating string
+var aftSaleRound = taxPrice.toFixed(2)
+var result5 = ("Your " + item + " was originally $" + oriPrice + ", but after a " + disPer + "% discount, it is now $" + disPrice + " without tax, and $" + aftSaleRound + " with tax.");//the result in a concatenating string
 console.log(result5);//printout of item, original price, discount percentage, discounted price, and price after tax.
