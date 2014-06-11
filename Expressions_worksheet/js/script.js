@@ -25,8 +25,7 @@ console.log(result3); //printout of Sparky's slices
 //calculate the average amount spent on groceries
 
 var Groceries = [prompt("Week one amount spent on groceries."," " ), prompt("Week two amount spent on groceries."," " ), prompt("Week three amount spent on groceries."," " ), prompt("Week four amount spent on groceries."," " ), prompt("Week five amount spent on groceries."," " )]; //array for groceries week 1 thru week 5
-var groSum = Number(Groceries[0]) + Number(Groceries[1]) + Number(Groceries[2]) + Number(Groceries[3]) + (Groceries[4]); //sum of the array, adding each week
-console.log(groSum);
+var groSum = Number(Groceries[0]) + Number(Groceries[1]) + Number(Groceries[2]) + Number(Groceries[3]) + Number(Groceries[4]); //sum of the array, adding each week
 var groAve = groSum/5; // average of the array, sum divided by number of weeks
 var result4 = ("You have spent a total of $") + groSum + (" on groceries over 5 weeks. That is an average of $") + groAve + (" per week."); //the result in a concatenating string
 console.log(result4); //printout of grocery sum and average
