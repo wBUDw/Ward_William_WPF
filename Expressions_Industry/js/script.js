@@ -78,5 +78,22 @@ gamesPlayed ++;
 console.log(gamesPlayed);
 
 //calculate rushYard per rushCar
+var yardsPCar = rushYard / rushCar;
+//log for yardsPCar
+console.log(yardsPCar);
+
+//calculate recYard per recCat
+var yardsPCat = recYard / recCat;
+//log for yardsPCat
+console.log(yardsPCat);
+
+//calculate recYac per recCat
+var yacPCat = recYac / recCat;
+//log for yardsPCat
+console.log(yacPCat);
 
 //result for first game in concatenating string
+var result = ("Congratulations"+space+firstName+", in"+space+gamesPlayed+space+"game you had"+space+rushCar+space+"carries, for"+space+rushYard+space+"yards,"+space+rushTD+space+"touchdown/s,"+space+rushFum+space+"fumble/s, and averaged"+space+yardsPCar+space+"yards per carry.");
+//log and alert the Result
+console.log(result);
+alert(result);
