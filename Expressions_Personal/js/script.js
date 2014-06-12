@@ -20,28 +20,28 @@ var firstName = prompt("Hello what is your name?");
  var welcome = ("Hello"+space+firstName+"!");
 
 //alert and log using var welcome to greet the user
- console.log(welcome)
+ console.log(welcome);
  alert(welcome);
 
  //var for the number of tickets
- var tickets = 40
+ var tickets = 40;
 
  //creating concatenating string var intro
  var intro = (firstName+space+"today we have 40 tickets for the baseball game.");
 
 //I alert and log using var intro to tell the user how many tickets there are
- console.log(intro)
+ console.log(intro);
  alert(intro);
 
  //create concatenating string var info
  var info = ("I am going to ask you how many tickets you need but I need to know how many tickets three of your four friends need as well.");
 
  //An alert and log using var info to tell the user what information i need
- console.log(info)
+ console.log(info);
  alert(info);
 
  //create bobs var and ticket var
- var friend1 = "Bob"
+ var friend1 = "Bob";
  var bobsNumTick = 5;
 
 
@@ -49,7 +49,7 @@ var firstName = prompt("Hello what is your name?");
  var bobsTick = ("I know that your friend Bob already needs"+space+bobsNumTick+space+"tickets.");
 
  //inform user with var bobsTick that bob needs 5 already
- console.log(bobsTick)
+ console.log(bobsTick);
  alert(bobsTick);
 
  //create a new total after bob
@@ -59,7 +59,7 @@ var firstName = prompt("Hello what is your name?");
 
  //create an array for users friends
  var friends = [prompt(firstName+space+"what is the name of your second friend?"), prompt(firstName+space+"what is the name of your third friend?"), prompt(firstName+space+"what is the name of your fourth friend?")];
-console.log(friends)
+console.log(friends);
 
  //turn array prompts into var
  var friend2 = friends[0];
@@ -71,7 +71,7 @@ console.log(friends)
  alert(firstName+space+"after we subtract"+space+friend1+"\'s"+space+bobsNumTick+space+"tickets we have"+space+newTickTot+space+"tickets.");
 
  //create var using a prompt for the number of tickets needed by the user
- var userTickets = prompt("How many tickets do you need?")
+ var userTickets = prompt("How many tickets do you need?");
 
 //calculate the new total after bob minus how many tickets you need
  var newTickTot2 = newTickTot - userTickets;
