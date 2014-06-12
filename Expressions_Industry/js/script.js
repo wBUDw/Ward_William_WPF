@@ -21,15 +21,62 @@ var welcome = ("Welcome"+space+firstName+", I am going to ask you for your stats
 console.log(welcome);
 alert(welcome);
 
-//creating var prompts rushCarQ, rushYardQ, rushTDQ, rushFumQ, recCatQ, recYardQ, recYacQ, recTDQ, to be entered in my array
-var rushCarQ = prompt(firstName+space+"how many times did you carry the football?");
-var rushYardQ = prompt(firstName+space+"how much yards did you get while carrying the football?");
-var rushTDQ = prompt(firstName+space+"how many times did you score a rushing touchdown?");
-var rushFumQ = prompt(firstName+space+"how many times did you fumble the football?");
-var recCatQ = prompt(firstName+space+"how many times did you catch the football?");
-var recYardQ = prompt(firstName+space+"how much yards did you get on catches?");
-var recYacQ = prompt(firstName+space+"how much yards after the catch did you get?");
-var recTDQ = prompt(firstName+space+"how many times did receive a catch for a touchdown?");
+//creating var array prompt rushStats
+var rushStats = [prompt(firstName+space+"how many times did you carry the football?"), prompt(firstName+space+"how much yards did you get while carrying the football?"), prompt(firstName+space+"how many times did you score a rushing touchdown?"), prompt(firstName+space+"how many times did you fumble the football?")];
+console.log(rushStats);
 
-//create array using var rushCarQ, rushYardQ, rushTDQ, rushFumQ, recCatQ, recYardQ, recYacQ, and recTDQ
-var stats =
+//using rushStat array to create var for rushCar
+var rushCar = rushStats[0];
+//log for rushCar
+console.log(rushCar);
+
+//using rushStat array to create var for rushYard
+var rushYard = rushStats[1];
+//log for rushYard
+console.log(rushYard);
+
+//using rushStat array to create var for rushTD
+var rushTD = rushStats[2];
+//log for rushTD
+console.log(rushTD);
+
+//using rushStat array to create var for rushFum
+var rushFum = rushStats[3];
+//log for rushCar
+console.log(rushFum);
+
+//creating var array prompt recStats
+var recStats = [prompt(firstName+space+"how many times did you catch the football?"), prompt(firstName+space+"how much yards did you get on catches?"), prompt(firstName+space+"how much yards after the catch did you get?"), prompt(firstName+space+"how many times did receive a catch for a touchdown?")];
+//log for recStats
+console.log(recStats);
+
+//using recStats array to create var recCat
+var recCat = recStats[0];
+//log for recStats
+console.log(recCat);
+
+//using recStats array to create var recYard
+var recYard = recStats[1];
+//log for recStats
+console.log(recYard);
+
+//using recStats array to create var recYac
+var recYac = recStats[2];
+//log for recStats
+console.log(recYac);
+
+//using recStats array to create var recTD
+var recTD = recStats[3];
+//log for recStats
+console.log(recTD);
+
+//var games played currently at zero
+var gamesPlayed = 0;
+
+//calculate gamesPlayed plus one (++)
+gamesPlayed ++;
+console.log(gamesPlayed);
+
+//calculate rushYard per rushCar
+
+//result for first game in concatenating string
