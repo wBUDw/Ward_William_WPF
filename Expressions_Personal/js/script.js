@@ -128,8 +128,8 @@ console.log(friends)
  console.log(newTickTot5);
 
  //create concatenating string var userBobF23Tick
- var Result = (firstName+space+"has"+space+userTickets+","+space+friend1+space+"has"+space+bobsNumTick+","+space+friend2+space+"has"+space+frnd2Tick+space+","+space+friend3+space+"has"+space+frnd3Tick+space+", and"+space+friend4+space+"has"+space+frnd4Tick+space+"tickets: Leaving"+space+newTickTot5+space+"tickets.");
+ var result = (firstName+space+"has"+space+userTickets+","+space+friend1+space+"has"+space+bobsNumTick+","+space+friend2+space+"has"+space+frnd2Tick+space+","+space+friend3+space+"has"+space+frnd3Tick+space+", and"+space+friend4+space+"has"+space+frnd4Tick+space+"tickets: Leaving"+space+newTickTot5+space+"extra tickets.");
 
- //alert user to left of tickets
- console.log(userBobF2F3Tick);
- alert(userBobF2F3Tick);
+ //alert user to how many tickets each friend has and how many tickets may be left or owed
+ console.log(result);
+ alert(result);
