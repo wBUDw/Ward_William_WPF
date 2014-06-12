@@ -93,7 +93,13 @@ var yacPCat = recYac / recCat;
 console.log(yacPCat);
 
 //result for first game in concatenating string
-var result = ("Congratulations"+space+firstName+", in"+space+gamesPlayed+space+"game you had"+space+rushCar+space+"carries, for"+space+rushYard+space+"yards,"+space+rushTD+space+"touchdown/s,"+space+rushFum+space+"fumble/s, and averaged"+space+yardsPCar+space+"yards per carry.");
+var resultRush = ("Congratulations"+space+firstName+", in"+space+gamesPlayed+space+"game you had"+space+rushCar+space+"carr/y/ies, for"+space+rushYard+space+"yard/s,"+space+rushTD+space+"touchdown/s,"+space+rushFum+space+"fumble/s, and averaged"+space+yardsPCar+space+"yard/s per carry.");
 //log and alert the Result
-console.log(result);
-alert(result);
+console.log(resultRush);
+alert(resultRush);
+
+//result for first game in concatenating string
+var resultRec = ("Also"+space+firstName+", in"+space+gamesPlayed+space+"game you had"+space+recCat+space+"catch/es, for"+space+recYard+space+"yard/s,"+space+recYac+space+"yard/s after the catch,"+space+recTD+space+"touchdown/s, averaged"+space+yardsPCat+space+"yard/s per catch, and averaged"+space+yacPCat+space+"yard/s after the catch per catch.");
+//log and alert the ResultRec
+console.log(resultRec);
+alert(resultRec);
