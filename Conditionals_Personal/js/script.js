@@ -1,8 +1,10 @@
 
  /*
 William Ward
-6/11/14
-Expressions Industry
+6/18/14
+Conditionals Personal
  */
 
-alert("testing");
+//alert("testing");
+
+ //

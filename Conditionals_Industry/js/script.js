@@ -12,18 +12,12 @@ Conditionals Industry
  //Prompt User for name
  var name = prompt("What is your name?");
 
- //verify they entered their name
+ //verify they entered their name with a ternary
+ //welcome user or re-prompt for name
+ (name==="") ? name = prompt("Please enter your name this time.") : alert("Hello "+name +".");
 
- if(name===""){
-     //log name
-     console.log(name);
-     //re-prompt for name
-     name = prompt("Please enter your name this time.")
-
- }else{
-    //welcome user
-    alert("Hello "+name +".");
- }
+ //log name
+ console.log(name);
 
  //var for info for the user
  var info = name+", I will need to know what team you are on, what team you played, how many points your team scored and how many points your opponent scored.";
@@ -93,22 +87,34 @@ Conditionals Industry
  if (scoreDiff > 0){
 
      //var for the result if scoreDiff is greater than 0
-     var result = name+" your "+teams[0]+" played against the "+teams[1]+". The score of the game was, "+teams[0]+" "+scores[0]+", and the "+teams[1]+" "+scores[1]+". The "+teams[0]+" beat the "+teams[1]+" by "+scoreDiff+" points.";
+     var result1 = name+" your "+teams[0]+" played against the "+teams[1]+". The score of the game was, "+teams[0]+" "+scores[0]+", and the "+teams[1]+" "+scores[1]+". The "+teams[0]+" beat the "+teams[1]+" by "+scoreDiff+" points.";
+
+     //log result
+     console.log(result1);
+
+     //alert result
+     alert(result1);
 
  }else if (scoreDiff===0){
 
      //var for the result if scoreDiff is equal to 0
-     var result = name+" your "+teams[0]+" played against the "+teams[1]+". The score of the game was, "+teams[0]+" "+scores[0]+", and the "+teams[1]+" "+scores[1]+". The "+teams[0]+" tied with the "+teams[1]+".";
+     var result2 = name+" your "+teams[0]+" played against the "+teams[1]+". The score of the game was, "+teams[0]+" "+scores[0]+", and the "+teams[1]+" "+scores[1]+". The "+teams[0]+" tied with the "+teams[1]+".";
+
+     //log result
+     console.log(result2);
+
+     //alert result
+     alert(result2);
 
  }else{
 
      //var for the result if scoreDiff is less than 0
-     var result = name+" your "+teams[0]+" played against the "+teams[1]+". The score of the game was, "+teams[1]+" "+scores[1]+", and the "+teams[0]+" "+scores[0]+". The "+teams[1]+" beat the "+teams[0]+" by "+Number(scoreDiff*-1)+" points."
+     var result3 = name+" your "+teams[0]+" played against the "+teams[1]+". The score of the game was, "+teams[1]+" "+scores[1]+", and the "+teams[0]+" "+scores[0]+". The "+teams[1]+" beat the "+teams[0]+" by "+Number(scoreDiff*-1)+" points.";
+
+     //log result
+     console.log(result3);
+
+     //alert result
+     alert(result3);
 
  }
-
- //log result
- console.log(result);
-
- //alert result
- alert(result);
