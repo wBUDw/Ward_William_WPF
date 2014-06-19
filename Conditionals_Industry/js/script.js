@@ -57,7 +57,7 @@ Conditionals Industry
  //prompt for the scores of the game the user was in
  var scores = [prompt(name+", what was your score?") , prompt(name+", what was the other team's score?")];
 
- //verify that prompt scores[0] is a number and not blank
+ //verify that prompt scores[0] is a number or not blank
  if (isNaN(scores[0]) || scores[0]===""){
 
      //re-prompt for scores[0]
@@ -67,7 +67,7 @@ Conditionals Industry
      console.log(teams[0])
  }
 
- //verify that prompt scores[1] is a number and not blank
+ //verify that prompt scores[1] is a number or not blank
  if (isNaN(scores[1]) || scores[1]===""){
 
      //re-prompt for scores[1]
