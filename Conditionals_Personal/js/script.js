@@ -111,4 +111,51 @@ if (isNaN(hoursGamePlay[0]) || hoursGamePlay[0]>=hoursInDay){
  //log average of array
  console.log(averageHours);
 
+ //if for result1, result2, result3, or result4
+
+ if (totalHours<=0) {
+
+     //var for the result1 if averageHours is equal or less than 0
+     var result1 = name+" congrats on having a life and spending "+totalHours+" hours per week, playing video games.";
+
+     //log result1
+     console.log(result1);
+
+     //alert result1
+     alert(result1);
+
+ } else if (totalHours<16) {
+
+     //var for the result2 if averageHours is less than 16
+     var result2 = name+" congrats on keeping your total hours per week reasonable. You play "+totalHours+" hours per-week, and average"+averageHours+" hours per day, playing video games.";
+
+     //log result2
+     console.log(result2);
+
+     //alert result2
+     alert(result2);
+
+ } else if (totalHours<30) {
+
+     //var for the result3 if averageHours less than 30
+     var result3 = name+" your total hours are in the ball park of a part-time job. You play "+totalHours+" hours per-week, and average"+averageHours+" hours per day, playing video games.";
+
+     //log result3
+     console.log(result3);
+
+     //alert result3
+     alert(result3);
+
+ } else{
+
+     //var for the result4 if averageHours is greater than 29
+     var result4 = name+" your total hours are best compared to a full-time job. You play "+totalHours+" hours per-week, and average"+averageHours+" hours per day, playing video games.";
+
+     //log result4
+     console.log(result4);
+
+     //alert result4
+     alert(result4);
+ }
+
 
