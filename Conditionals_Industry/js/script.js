@@ -83,38 +83,38 @@ Conditionals Industry
  //get the score diff to determine win,lose, tie.
  var scoreDiff = scores[0]-scores[1];
 
- // if for the result
+ //if for result1, result2, or result3
  if (scoreDiff > 0){
 
-     //var for the result if scoreDiff is greater than 0
+     //var for the result1 if scoreDiff is greater than 0
      var result1 = name+" your "+teams[0]+" played against the "+teams[1]+". The score of the game was, "+teams[0]+" "+scores[0]+", and the "+teams[1]+" "+scores[1]+". The "+teams[0]+" beat the "+teams[1]+" by "+scoreDiff+" points.";
 
-     //log result
+     //log result1
      console.log(result1);
 
-     //alert result
+     //alert result1
      alert(result1);
 
  }else if (scoreDiff===0){
 
-     //var for the result if scoreDiff is equal to 0
+     //var for the result2 if scoreDiff is equal to 0
      var result2 = name+" your "+teams[0]+" played against the "+teams[1]+". The score of the game was, "+teams[0]+" "+scores[0]+", and the "+teams[1]+" "+scores[1]+". The "+teams[0]+" tied with the "+teams[1]+".";
 
-     //log result
+     //log result2
      console.log(result2);
 
-     //alert result
+     //alert result2
      alert(result2);
 
  }else{
 
-     //var for the result if scoreDiff is less than 0
+     //var for the result3 if scoreDiff is less than 0
      var result3 = name+" your "+teams[0]+" played against the "+teams[1]+". The score of the game was, "+teams[1]+" "+scores[1]+", and the "+teams[0]+" "+scores[0]+". The "+teams[1]+" beat the "+teams[0]+" by "+Number(scoreDiff*-1)+" points.";
 
-     //log result
+     //log result3
      console.log(result3);
 
-     //alert result
+     //alert result3
      alert(result3);
 
  }
