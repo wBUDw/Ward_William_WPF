@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6e9aa966-d4ef-4f5b-91fc-2a1fa7e58a63" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Functions_Wacky/js/script.js" afterPath="$PROJECT_DIR$/Functions_Wacky/js/script.js" />
-    </list>
+    <list default="true" id="6e9aa966-d4ef-4f5b-91fc-2a1fa7e58a63" name="Default" comment="" />
     <ignored path="Ward_William_WPF.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
