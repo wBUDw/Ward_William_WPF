@@ -78,6 +78,9 @@ alert("testing");
  //create var info
  var info = "Today "+fullName+" we need to know how long you walked on the treadmill over the course of three days.";
 
+ //log info
+ console.log(info);
+
  //alert user to the info we will require
  alert(info);
 
@@ -116,7 +119,7 @@ alert("testing");
 
      //calculate totalHours
      var sumMin = Number(day1SM)+Number(day2SM)+Number(day3SM);
-     //return sumHours
+     //return sumMin
      return sumMin;
  };
 
