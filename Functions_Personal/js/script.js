@@ -8,7 +8,7 @@ Expressions Industry
 alert("testing");
 */
 
- //What my average speed, miles, steps on treadmill
+ //How long I spend on treadmill
 
  //Prompt for firstName
  var firstName = prompt("Please enter your first name:");
@@ -76,100 +76,98 @@ alert("testing");
  alert(welcome);
 
  //create var info
- var info = "Today "+fullName+" we need to know how long you walked on the treadmill, and what speed you used to walk over the course of three days";
+ var info = "Today "+fullName+" we need to know how long you walked on the treadmill over the course of three days.";
 
  //alert user to the info we will require
  alert(info);
 
- //create array for hours walked
- var tredHours = [prompt("Day one, how many hours did you walk?"), prompt("Day two, how many hours did you walk?"), prompt("Day three, how many hours did you walk?")];
+ //create array for minutes walked
+ var tredMin = [prompt("Day one, how many minutes did you walk?"), prompt("Day two, how many minutes did you walk?"), prompt("Day three, how many minutes did you walk?")];
 
- //validate tredHours[0] with while loop
- while (tredHours[0]==="" || isNaN(tredHours[0])){
+ //validate tredMin[0] with while loop
+ while (tredMin[0]==="" || isNaN(tredMin[0])){
 
-     //Re-prompt for tredHours[0]
-     tredHours[0] = prompt("Please do not leave blank, and use only numbers. Day one, how many hours did you walk?")
-
- }
-
- //validate tredHours[1] with while loop
- while (tredHours[1]==="" || isNaN(tredHours[1])){
-
-     //Re-prompt for tredHours[1]
-     tredHours[1] = prompt("Please do not leave blank, and use only numbers. Day two, how many hours did you walk?")
+     //Re-prompt for tredMin[0]
+     tredMin[0] = prompt("Please do not leave blank, and use only numbers. Day one, how many minutes did you walk?")
 
  }
 
- //validate tredHours[2] with while loop
- while (tredHours[2]==="" || isNaN(tredHours[2])){
+ //validate tredMin[1] with while loop
+ while (tredMin[1]==="" || isNaN(tredMin[1])){
 
-     //Re-prompt for tredHours[2]
-     tredHours[2] = prompt("Please do not leave blank, and use only numbers. Day three, how many hours did you walk?")
-
- }
-
- //log array tredHours
- console.log(tredHours);
-
- //create array for speed in mph walked
- var tredMph = [prompt("Day one, what mph setting did you use?"), prompt("Day two, what mph setting did you use?"), prompt("Day three, what mph setting did you use?")];
-
- //validate tredMph[0] with while loop
- while (tredMph[0]==="" || isNaN(tredMph[0])){
-
-     //Re-prompt for tredMph[0]
-     tredMph[0] = prompt("Please do not leave blank, and use only numbers. Day one, what mph setting did you use?")
+     //Re-prompt for tredMin[1]
+     tredMin[1] = prompt("Please do not leave blank, and use only numbers. Day two, how many minutes did you walk?")
 
  }
 
- //validate tredMph[1] with while loop
- while (tredMph[1]==="" || isNaN(tredMph[1])){
+ //validate tredMin[2] with while loop
+ while (tredMin[2]==="" || isNaN(tredMin[2])){
 
-     //Re-prompt for tredMph[1]
-     tredMph[1] = prompt("Please do not leave blank, and use only numbers. Day two, what mph setting did you use?")
-
- }
-
- //validate tredMph[2] with while loop
- while (tredMph[2]==="" || isNaN(tredMph[2])){
-
-     //Re-prompt for tredMph[2]
-     tredMph[2] = prompt("Please do not leave blank, and use only numbers. Day three, what mph setting did you use?")
+     //Re-prompt for tredMin[2]
+     tredMin[2] = prompt("Please do not leave blank, and use only numbers. Day three, how many minutes did you walk?")
 
  }
 
- //log array tredMph
- console.log(tredMph);
+ //log array tredMin
+ console.log(tredMin);
 
- //anonymous function for totalHours
- var totalHours =function(day1SH,day2SH,day3SH){
+ //anonymous function for totalMin
+ var totalMin =function(day1SM,day2SM,day3SM){
 
      //calculate totalHours
-     var sumHours = Number(day1SH)+Number(day2SH)+Number(day3SH);
+     var sumMin = Number(day1SM)+Number(day2SM)+Number(day3SM);
      //return sumHours
-     return sumHours;
+     return sumMin;
  };
 
- //create var for
- var tredSumHours = totalHours(tredHours[0],tredHours[1],tredHours[2]);
+ //create var for tredSumMin
+ var tredSumMin = totalMin(tredMin[0],tredMin[1],tredMin[2]);
 
- //log tredSumHours
- console.log(tredSumHours);
+ //log tredSumMin
+ console.log(tredSumMin);
 
- //anonymous function for averageHours
- var averageHours =function(day1SH,day2SH,day3SH){
+ //anonymous function for averageMin
+ var averageMin =function(day1AM,day2AM,day3AM){
 
-     //calculate averageHours
-     var aveHours = (Number(day1SH)+Number(day2SH)+Number(day3SH))/tredHours.length;
-     //return sumHours
-     return aveHours;
+     //calculate aveMin
+     var aveMin = (Number(day1AM)+Number(day2AM)+Number(day3AM))/tredMin.length;
+     //return aveHours
+     return aveMin;
  };
 
- //create var for
- var tredAveHours = averageHours(tredHours[0],tredHours[1],tredHours[2]);
+ //create var for tredAveMin
+ var tredAveMin = averageMin(tredMin[0],tredMin[1],tredMin[2]);
 
- //round tredAveHours to nearest hundredth
- var roundTredAveHours = tredAveHours.toFixed(2);
+ //round tredAveMin to nearest hundredth
+ var roundTredAveMin = tredAveMin.toFixed(2);
 
- //log tredSumHours
- console.log(roundTredAveHours);
+ //log roundTredAveMin
+ console.log(roundTredAveMin);
+
+ //calculate sum hours from tredSumMin
+ var tredSumHour = tredSumMin/60;
+
+ //log tredSumHour
+ console.log(tredSumHour);
+
+ //round tredSumHours to nearest hundredth
+ roundTredSumMin = tredSumHour.toFixed(2);
+
+ //log roundTredSumMin
+ console.log(roundTredSumMin);
+
+ //calculate ave hours from tredAveMin
+ var tredAveHour = tredAveMin/60;
+
+ //log tredAveMin
+ console.log(tredAveHour);
+
+ //round tredAveHour to nearest hundredth
+ var roundTredAveHour = tredAveHour.toFixed(2);
+
+ //log roundTredAveHour
+ console.log(roundTredAveHour);
+
+ //ternary
+ (tredSumHour <=2.99 || tredAveHour<=.99) ? console.log(fullName+" you may want to look at increasing how long you walk per day.") : console.log(fullName+" congratulations keep up the hard work. ");
+
