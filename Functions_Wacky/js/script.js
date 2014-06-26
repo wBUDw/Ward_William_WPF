@@ -33,7 +33,7 @@ Functions Wacky
  alert(welcome);
 
  //create var info
- var info = gamerTag+" we need you to play five games of Call of Duty and we want you keep track of your kills and deaths.";
+ var info = gamerTag+" we need you to play five games of Call of Duty and we want you to keep track of your kills and deaths.";
 
  //log info
  console.log(info);
@@ -223,5 +223,43 @@ Functions Wacky
  //log roundKDG5
  console.log(roundKDG5);
 
+ //calculate total kill-death ratio
+ var totalKD = killsSum/deathsSum;
+
+ //log totalKD
+ console.log(totalKD);
+
+ //round totalKD
+ var roundTKD = totalKD.toFixed(2);
+
+ //result for user
+ if (totalKD<1){
+
+     //var totalKDL1
+     var totalKDL1 = gamerTag+" you had kill-death ratios of: Game 1 "+roundKDG1+", Game 2 "+roundKDG1+", Game 3 "+roundKDG1+", Game 4 "+roundKDG1+", Game 5 "+roundKDG1+". You had a total kill-death ratio of "+roundTKD+". This is below average.";
+     //log totalKDL1
+     console.log(totalKDL1);
+     //alert totalKDL1
+     alert(totalKDL1);
+
+ }else if (totalKD===1){
+
+     //var totalKDE1
+     var totalKDE1 = gamerTag+" you had kill-death ratios of: Game 1 "+roundKDG1+", Game 2 "+roundKDG1+", Game 3 "+roundKDG1+", Game 4 "+roundKDG1+", Game 5 "+roundKDG1+". You had a total kill-death ratio of "+roundTKD+". This is average.";
+     //log totalKDE1
+     console.log(totalKDE1);
+     //alert totalKDE1
+     alert(totalKDE1);
+
+ }else if (totalKD>1) {
+
+     //var totalKDG1
+     var totalKDG1 = gamerTag + " you had kill-death ratios of: Game 1 " + roundKDG1 + ", Game 2 " + roundKDG1 + ", Game 3 " + roundKDG1 + ", Game 4 " + roundKDG1 + ", Game 5 " + roundKDG1 + ". You had a total kill-death ratio of " + roundTKD + ". This is above average.";
+     //log totalKDG1
+     console.log(totalKDG1);
+     //alert totalKDG1
+     alert(totalKDG1);
+
+ }
 
 

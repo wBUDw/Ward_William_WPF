@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e9aa966-d4ef-4f5b-91fc-2a1fa7e58a63" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Functions_Wacky/index.html" afterPath="$PROJECT_DIR$/Functions_Wacky/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Functions_Wacky/js/script.js" afterPath="$PROJECT_DIR$/Functions_Wacky/js/script.js" />
     </list>
     <ignored path="Ward_William_WPF.iws" />
@@ -39,8 +38,8 @@
       <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Functions_Wacky/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6911765" vertical-offset="835" max-vertical-offset="3495">
-              <caret line="87" column="20" selection-start-line="87" selection-start-column="20" selection-end-line="87" selection-end-column="20" />
+            <state vertical-scroll-proportion="-4.2058825" vertical-offset="3385" max-vertical-offset="4065">
+              <caret line="35" column="89" selection-start-line="35" selection-start-column="89" selection-end-line="35" selection-end-column="89" />
               <folding />
             </state>
           </provider>
@@ -557,8 +556,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Functions_Wacky/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6911765" vertical-offset="835" max-vertical-offset="3495">
-          <caret line="87" column="20" selection-start-line="87" selection-start-column="20" selection-end-line="87" selection-end-column="20" />
+        <state vertical-scroll-proportion="-4.2058825" vertical-offset="3385" max-vertical-offset="4065">
+          <caret line="35" column="89" selection-start-line="35" selection-start-column="89" selection-end-line="35" selection-end-column="89" />
           <folding />
         </state>
       </provider>
