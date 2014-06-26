@@ -76,58 +76,54 @@ Functions Industry
  var totalTD =function(game1TD,game2TD,game3TD){
 
      //calculate totalTD
-     var sumMin = Number(day1SM)+Number(day2SM)+Number(day3SM);
-     //return sumHours
-     return sumMin;
+     var sumTD = Number(game1TD)+Number(game2TD)+Number(game3TD);
+     //return sumTD
+     return sumTD;
  };
 
- //create var for tredSumMin
- var tredSumMin = totalMin(tredMin[0],tredMin[1],tredMin[2]);
+ //create var for gamesSumTD
+ var gamesSumTD = totalTD(tDThrown[0],tDThrown[1],tDThrown[2]);
 
- //log tredSumMin
- console.log(tredSumMin);
+ //log gamesSumTD
+ console.log(gamesSumTD);
 
- //anonymous function for averageMin
- var averageMin =function(day1AM,day2AM,day3AM){
+ //calculate average td per game
+ var aveTDGame = gamesSumTD/tDThrown.length;
 
-     //calculate aveMin
-     var aveMin = (Number(day1AM)+Number(day2AM)+Number(day3AM))/tredMin.length;
-     //return aveHours
-     return aveMin;
- };
+ console.log(aveTDGame);
 
- //create var for tredAveMin
- var tredAveMin = averageMin(tredMin[0],tredMin[1],tredMin[2]);
+ //round aveTDGame to nearest hundredth
+ var roundAveTD = aveTDGame.toFixed(2);
 
- //round tredAveMin to nearest hundredth
- var roundTredAveMin = tredAveMin.toFixed(2);
+ console.log(roundAveTD);
 
- //log roundTredAveMin
- console.log(roundTredAveMin);
+ //result for touchdowns
 
- //calculate sum hours from tredSumMin
- var tredSumHour = tredSumMin/60;
+ if (roundAveTD<3) {
 
- //log tredSumHour
- console.log(tredSumHour);
+     //create var for <3
+     var less3 = firstName+" with "+gamesSumTD+" total touchdowns, averaging "+roundAveTD+" touchdowns per game. You are below average and may want to go back to practice mode.";
+     //log less3
+     console.log(less3);
+     //alert of result of less3
+     alert(less3);
 
- //round tredSumHours to nearest hundredth
- roundTredSumMin = tredSumHour.toFixed(2);
+ }else if(roundAveTD===3) {
 
- //log roundTredSumMin
- console.log(roundTredSumMin);
+     //create var for ===3
+     var equal3 = firstName+" with "+gamesSumTD+" total touchdowns, averaging "+roundAveTD+" touchdowns per game. You are average and may want to spend a little time in practice mode to get you over the hump.";
+     //log equal3
+     console.log(equal3);
+     //alert of result of equal3
+     alert(equal3);
 
- //calculate ave hours from tredAveMin
- var tredAveHour = tredAveMin/60;
+ }else{
 
- //log tredAveMin
- console.log(tredAveHour);
+     //create var for <3
+     var greater3 = firstName+" with "+gamesSumTD+" total touchdowns, averaging "+roundAveTD+" touchdowns per game. You are above average and do not need to spend time in practice mode but do not let that get to your head.";
+     //log greater3
+     console.log(greater3);
+     //alert of result of greater3
+     alert(greater3);
 
- //round tredAveHour to nearest hundredth
- var roundTredAveHour = tredAveHour.toFixed(2);
-
- //log roundTredAveHour
- console.log(roundTredAveHour);
-
- //ternary
- (tredSumHour <=2.99 || tredAveHour<=.99) ? console.log(fullName+" you may want to look at increasing how long you walk per day.") : console.log(fullName+" congratulations keep up the hard work. ");
+ }
