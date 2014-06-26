@@ -99,7 +99,7 @@ Functions Industry
 
  //result for touchdowns
 
- if (roundAveTD<3) {
+ if (aveTDGame<3) {
 
      //create var for <3
      var less3 = firstName+" with "+gamesSumTD+" total touchdowns, averaging "+roundAveTD+" touchdowns per game. You are below average and may want to go back to practice mode.";
@@ -108,7 +108,7 @@ Functions Industry
      //alert of result of less3
      alert(less3);
 
- }else if(roundAveTD===3) {
+ }else if(aveTDGame===3) {
 
      //create var for ===3
      var equal3 = firstName+" with "+gamesSumTD+" total touchdowns, averaging "+roundAveTD+" touchdowns per game. You are average and may want to spend a little time in practice mode to get you over the hump.";
@@ -117,7 +117,7 @@ Functions Industry
      //alert of result of equal3
      alert(equal3);
 
- }else{
+ }else {
 
      //create var for <3
      var greater3 = firstName+" with "+gamesSumTD+" total touchdowns, averaging "+roundAveTD+" touchdowns per game. You are above average and do not need to spend time in practice mode but do not let that get to your head.";
